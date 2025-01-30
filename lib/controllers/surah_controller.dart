@@ -8,7 +8,7 @@ class SurahController {
   List<SurahModel> surah = [];
 
   Future<void> loadData() async {
-    String data = await rootBundle.loadString("assets/surah.json");
+    String data = await rootBundle.loadString("assets/ayah.json");
     List listJson = List.from(jsonDecode(data));
     surah = listJson.map((json) => SurahModel.fromJson(json)).toList();
   }
