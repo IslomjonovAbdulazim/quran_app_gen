@@ -1,15 +1,15 @@
-class VerseModel {
+class AyahModel {
   late int chapter;
   late int verse;
   late String text;
 
-  VerseModel({
+  AyahModel({
     required this.chapter,
     required this.verse,
     required this.text,
   });
 
-  VerseModel.fromJson(Map json) {
+  AyahModel.fromJson(Map json) {
     chapter = json["chapter"];
     verse = json["verse"];
     text = json["text"];
